@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Jason Lee">
+  <title>Visualizing Data with Leaflet</title>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+  <!--D3 cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- The div where we will inject our map -->
+  <div class="container">
+    <div class="jumbotron" style="background-color: rgb(16, 15, 80)">
+      <h1> Visualize Global Eartquake Data </h1>
+      <p> Seismic Activity information from the past 7 days that is provided by 
+        <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank">(USGS)</a> 
+      </p>
+    </div>
+  </div>
+  <div id="map"></div>
+  
+  <!-- Our JS -->
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
